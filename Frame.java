@@ -7,7 +7,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class Frame {
 	
-	public HashMap<Integer, ItemStack> items;
+	private HashMap<Integer, ItemStack> items;
 
 	public Frame(HashMap<Integer, ItemStack> items) {
 		this.items = items;
