@@ -32,39 +32,6 @@ public class AnimateInventory {
 		this.size = size;
 	}
 
-	public int getSize() {
-		return size;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public boolean isLoop() {
-		return loop;
-	}
-
-	public Player getPlayer() {
-		return player;
-	}
-
-	public ArrayList<Frame> getFrames() {
-		return frames;
-	}
-
-	public int getDelay() {
-		return ticks;
-	}
-
-	public boolean isCorrectInventory() {
-		Inventory actual = player.getOpenInventory().getTopInventory();
-		if (player != null && player.isOnline() && player.getOpenInventory().getTopInventory() != null
-				&& actual.getTitle().equals(inv.getTitle())) {
-			return true;
-		}
-		return false;
-	}
-
 	public void play() {
 		inv = Bukkit.createInventory(player, size, title);
 		updateInv(frames.get(0), true);
@@ -96,11 +63,19 @@ public class AnimateInventory {
 				}
 
 			}
-		}.runTaskTimer(Main.getInstance(), ticks, ticks);
+		}.runTaskTimer(RDCBukkitAPI.getInstance(), ticks, ticks);
+	}
+	
+	private boolean isCorrectInventory() {
+		Inventory actual = player.getOpenInventory().getTopInventory();
+		if (player != null && player.isOnline() && player.getOpenInventory().getTopInventory() != null
+				&& actual.getTitle().equals(inv.getTitle())) {
+			return true;
+		}
+		return false;
 	}
 
-	@SuppressWarnings("deprecation")
-	public void updateInv(Frame f, boolean firstFrame) {
+	private void updateInv(Frame f, boolean firstFrame) {
 		if (!firstFrame) {
 			player.getOpenInventory().getTopInventory().clear();
 		}
@@ -110,19 +85,15 @@ public class AnimateInventory {
 		}
 	}
 
-	public void close() {
+	private void close() {
 		task.cancel();
 		if (player.isOnline()) {
 			player.closeInventory();
 		}
 	}
 
-	public boolean canAccessFrame(int i) {
+	private boolean canAccessFrame(int i) {
 		return i < frames.size();
-	}
-
-	public void loop() {
-
 	}
 
 }
