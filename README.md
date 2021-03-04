@@ -1,6 +1,9 @@
 # AnimateGUI
 Want to create a animation in a minecraft GUI ? Try this !
 
+With this, you will be able to create some cool animations like *this !*
+![alt text](https://fyzproject.fr/cdn/animation_example.gif "Animation example")
+
 # But.. How ?
 
 For now, the only solution is to import all the class in your project and follow all the steps :
