@@ -1,6 +1,8 @@
 # AnimateGUI
 Want to create a animation in a minecraft GUI ? Try this !
 
+**NEW : You can download the compiled API here : https://www.spigotmc.org/resources/animategui.89762/**
+
 With this, you will be able to create some cool animations like *this !*
 ![alt text](https://fyzproject.fr/cdn/animation_example.gif "Animation example")
 
