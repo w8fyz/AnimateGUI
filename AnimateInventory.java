@@ -10,16 +10,16 @@ import org.bukkit.scheduler.BukkitTask;
 
 public class AnimateInventory {
 
-	public Player player;
-	public ArrayList<Frame> frames;
-	public int ticks;
-	public boolean loop;
-	public int size;
-	public String title;
-	public boolean closeAtEnd;
-	public Inventory inv;
-	public String id;
-	public BukkitTask task;
+	private Player player;
+	private ArrayList<Frame> frames;
+	private int ticks;
+	private boolean loop;
+	private int size;
+	private String title;
+	private boolean closeAtEnd;
+	private Inventory inv;
+	private String id;
+	private BukkitTask task;
 
 	public AnimateInventory(String title, int size, Player player, ArrayList<Frame> frames, int ticks, boolean loop,
 			boolean closeAtEnd) {
