@@ -1,4 +1,4 @@
-package fr.fyzdesign.animateinv;
+package fr.fyz.animateinv;
 
 import java.util.HashMap;
 import java.util.Map.Entry;
