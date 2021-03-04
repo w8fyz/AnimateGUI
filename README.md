@@ -25,7 +25,7 @@ Start by creating a new Object "AnimateInventory"
  - the sixth is a boolean to know if the animation have to **loop** *when It end, it restart and this forever*
  - the seventh is a boolean for the gui to know if when the animation end he need to close the inventory of the player.
 
-**Step Two : Adding frames**
+**Step Two : Adding the frames**
 
 Create a new ArrayList of "Frame"
 
