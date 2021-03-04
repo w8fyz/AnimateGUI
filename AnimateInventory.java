@@ -1,4 +1,4 @@
-package fr.fyzdesign.rdc.animateinv;
+package fr.fyz.animateinv;
 
 import java.util.ArrayList;
 
@@ -7,8 +7,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
-
-import fr.fyzdesign.rdc.RDCBukkitAPI;
 
 public class AnimateInventory {
 
@@ -98,7 +96,7 @@ public class AnimateInventory {
 				}
 
 			}
-		}.runTaskTimer(RDCBukkitAPI.getInstance(), ticks, ticks);
+		}.runTaskTimer(Main.getInstance(), ticks, ticks);
 	}
 
 	@SuppressWarnings("deprecation")
