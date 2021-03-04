@@ -8,7 +8,8 @@ For now, the only solution is to import all the class in your project and follow
 **Step One : Creating the AnimateInventory object**
 
 Start by creating a new Object "AnimateInventory"
-*Exemple :*
+
+*Example :*
 
     new AnimateInventory("§cTest animation", 27, p, getFrames(), 1, true, false);
 
